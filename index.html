@@ -15,7 +15,7 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
-            padding-bottom: 70px; /* Aumentamos un poco por si el footer se solapa en móvil */
+            padding-bottom: 70px; /* Espacio adicional para que el footer no tape el contenido */
         }
         header {
             background: #004aad;
@@ -26,11 +26,11 @@
         nav ul {
             list-style: none;
             padding: 0;
-            margin: 0; /* Añadido para resetear margen */
+            margin: 0;
         }
         nav ul li {
             display: inline;
-            margin: 0 10px; /* Reducido un poco el margen para móviles */
+            margin: 0 10px;
         }
         nav ul li a {
             color: #fff;
@@ -38,7 +38,7 @@
             font-weight: bold;
         }
         main {
-            width: 85%; /* Un poco más ancho por defecto */
+            width: 85%;
             margin: 20px auto;
             background: #fff;
             padding: 20px;
@@ -54,132 +54,120 @@
         }
         .services {
             display: flex;
-            justify-content: space-around; /* Mantenemos flex para escritorio */
-            flex-wrap: wrap; /* Permite que los elementos pasen abajo si no caben */
+            justify-content: space-around;
+            flex-wrap: wrap;
             margin-top: 20px;
-            gap: 15px; /* Espacio entre los elementos flex */
+            gap: 15px;
         }
         .service {
             background: #e8f0fe;
             padding: 15px;
             border-radius: 5px;
-            width: 30%; /* Ancho para vista de escritorio */
+            width: 30%;
             text-align: center;
-            box-sizing: border-box; /* Incluye padding y border en el ancho total */
-            flex-grow: 1; /* Permite que crezcan si hay espacio */
-            min-width: 200px; /* Ancho mínimo antes de que se pongan muy estrechos */
+            box-sizing: border-box;
+            flex-grow: 1;
+            min-width: 200px;
         }
-         /* Ajustamos un poco el estilo del botón base */
         .btn {
-            display: inline-block; /* Mantenemos inline-block */
-            background: #004aad;
-            color: white !important; /* Importante para sobrescribir otros estilos si es necesario */
-            padding: 12px 20px; /* Un poco más de padding */
+            display: inline-block;
+            /* background: #004aad; -> Eliminamos el fondo azul por defecto aquí */
+            color: white !important;
+            padding: 12px 20px;
             border-radius: 5px;
             text-decoration: none;
             font-weight: bold;
             margin-top: 10px;
-            text-align: center; /* Centrar texto dentro del botón */
-            border: none; /* Asegurar que no haya borde */
-            cursor: pointer; /* Cursor de mano */
+            text-align: center;
+            border: none;
+            cursor: pointer;
         }
-
-        .btn:hover {
+        /* Quitamos el hover azul genérico para .btn para definirlo por botón */
+        /* .btn:hover {
             background: #003580;
-        }
+        } */
+
         .contact-btn {
             margin-top: 20px;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap; /* Permitir que los botones bajen en pantallas pequeñas */
-            gap: 15px; /* Espacio entre botones */
+            flex-wrap: wrap;
+            gap: 15px;
         }
-        /* Eliminamos estilos específicos de 'a' dentro de .contact-btn para usar la clase .btn */
         .contact-btn a {
-             margin: 0; /* Quitamos el margen individual */
+             margin: 0;
         }
+
+        /* --- ESTILOS BOTONES CONTACTO --- */
+        .contact-btn a.whatsapp-btn {
+             background-color: #25D366; /* Verde WhatsApp */
+             color: white !important;
+         }
+         .contact-btn a.whatsapp-btn:hover {
+             background-color: #1DA851; /* Verde WhatsApp oscuro */
+         }
 
         .contact-btn a.email-btn {
             background: #D44638; /* Email color */
+            color: white !important;
         }
          .contact-btn a.email-btn:hover {
             background: #b03024; /* Email color hover */
-        }
+         }
+
 
         footer {
             text-align: center;
             padding: 15px;
             background: #004aad;
             color: #fff;
-            position: fixed; /* Lo mantenemos fijo */
+            position: fixed;
             bottom: 0;
             width: 100%;
-            box-sizing: border-box; /* Para que el padding no aumente el ancho */
+            box-sizing: border-box;
         }
 
         /* --- MEDIA QUERIES (Estilos para Móviles y Pantallas Pequeñas) --- */
-        /* Usamos max-width: 768px como punto de corte común para tablets y móviles */
         @media (max-width: 768px) {
             main {
-                width: 95%; /* Hacemos el contenido principal casi el ancho completo */
-                padding: 15px; /* Reducimos padding */
+                width: 95%;
+                padding: 15px;
             }
-
             .services {
-                flex-direction: column; /* Apila los servicios verticalmente */
-                align-items: center; /* Centra los items apilados */
+                flex-direction: column;
+                align-items: center;
             }
-
             .service {
-                width: 90%; /* Cada servicio ocupa casi todo el ancho */
-                margin-bottom: 15px; /* Añade espacio entre servicios apilados */
+                width: 90%;
+                margin-bottom: 15px;
             }
-             /* Hacemos que los botones ocupen más espacio y se separen */
             .contact-btn {
-                flex-direction: column; /* Apila los botones */
-                align-items: center; /* Centra los botones */
+                flex-direction: column;
+                align-items: center;
             }
-
             .contact-btn a {
-                 width: 80%; /* Hacemos los botones más anchos */
-                 margin-bottom: 10px; /* Espacio entre botones apilados */
-                 box-sizing: border-box; /* Para que el padding no afecte el width */
+                 width: 80%;
+                 margin-bottom: 10px;
+                 box-sizing: border-box;
             }
-             /* Opcional: centrar texto de navegación si se ve mal */
-             nav ul {
+            nav ul {
                 text-align: center;
             }
             nav ul li {
-                 margin: 0 8px; /* Menos margen horizontal */
-                 display: inline-block; /* Asegurar que sigan en línea si caben */
-                 margin-bottom: 5px; /* Espacio por si pasan a segunda línea */
+                 margin: 0 8px;
+                 display: inline-block;
+                 margin-bottom: 5px;
             }
-             /* Ajustar tamaño de fuente si es necesario */
-             h1 {
-                 font-size: 1.8em;
-            }
-             h2 {
-                 font-size: 1.5em;
-            }
-             h3 {
-                 font-size: 1.1em;
-            }
+            h1 { font-size: 1.8em; }
+            h2 { font-size: 1.5em; }
+            h3 { font-size: 1.1em; }
         }
 
-         /* Ajustes adicionales para pantallas muy pequeñas */
          @media (max-width: 480px) {
-             nav ul li {
-                 margin: 0 5px; /* Aún menos margen */
-            }
-             .btn {
-                 padding: 10px 15px; /* Botones un poco más pequeños */
-            }
-            h1 {
-                 font-size: 1.5em;
-            }
-             h2 {
-                 font-size: 1.3em;
-            }
+             nav ul li { margin: 0 5px; }
+             .btn { padding: 10px 15px; }
+            h1 { font-size: 1.5em; }
+            h2 { font-size: 1.3em; }
          }
 
     </style>
@@ -216,7 +204,7 @@
         </section>
 
         <section class="contact-btn">
-            <a href="https://wa.me/34747439650" target="_blank" class="btn">Contacto vía WhatsApp</a>
+            <a href="https://wa.me/34747439650" target="_blank" class="btn whatsapp-btn">Contacto vía WhatsApp</a>
             <a href="mailto:bytecleaninfo@gmail.com" class="btn email-btn">Contacto vía Email</a>
         </section>
     </main>
