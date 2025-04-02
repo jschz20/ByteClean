@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprende trucos para optimizar tu PC, eliminar virus y malware eficazmente, y consejos esenciales de ciberseguridad para proteger tu información. Blog de ByteClean.">
+    <meta name="keywords" content="blog informatica, optimizar windows, acelerar pc, eliminar virus, quitar malware, troyano, spyware, ciberseguridad personal, contraseñas seguras, phishing, consejos pc, ByteClean">
+    <meta name="author" content="ByteClean">
+    <title>Blog - Optimización PC, Antivirus y Ciberseguridad | ByteClean</title>
+    <style>
+        /* --- ESTILOS GENERALES (Para Ordenador y base para Móvil) --- */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            padding-bottom: 70px; /* Espacio adicional para que el footer no tape el contenido */
+        }
+        header {
+            background: #004aad;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            width: 85%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            line-height: 1.6; /* Mejora legibilidad */
+        }
+         main article {
+            margin-bottom: 30px; /* Espacio entre artículos */
+            padding-bottom: 20px; /* Espacio antes de la línea */
+            border-bottom: 1px solid #eee; /* Separador visual */
+         }
+         main article:last-child {
+            border-bottom: none; /* No poner línea en el último */
+            margin-bottom: 0;
+         }
+         main h2 {
+             margin-top: 0; /* Evitar doble margen */
+             margin-bottom: 15px;
+         }
+         main ul {
+             margin-left: 20px;
+             margin-bottom: 15px;
+         }
+         main li {
+             margin-bottom: 5px;
+         }
+
+        section { /* Estilo general por si se usa section */
+            margin-bottom: 20px;
+        }
+        /* Título Principal H1 Centrado */
+        h1 {
+            color: #004aad;
+            text-align: center; /* Asegura el centrado */
+            margin-bottom: 30px; /* Aumentamos un poco el margen inferior para H1 */
+        }
+        /* Títulos de Artículos H2 a la Izquierda */
+         h2 {
+            color: #004aad;
+            text-align: left; /* Alineados a la izquierda */
+             margin-bottom: 15px;
+         }
+
+        .services { /* Reutilizamos por si acaso */
+            display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 20px; gap: 15px; }
+        .service { /* Reutilizamos por si acaso */
+            background: #e8f0fe; padding: 15px; border-radius: 5px; width: 30%; text-align: center; box-sizing: border-box; flex-grow: 1; min-width: 200px; }
+        .btn {
+            display: inline-block; color: white !important; padding: 12px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 10px; text-align: center; border: none; cursor: pointer; }
+        .contact-btn {
+            margin-top: 20px; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; }
+        .contact-btn a { margin: 0; }
+
+        /* --- ESTILOS BOTONES CONTACTO --- */
+        .contact-btn a.whatsapp-btn { background-color: #25D366; color: white !important; }
+        .contact-btn a.whatsapp-btn:hover { background-color: #1DA851; }
+        .contact-btn a.email-btn { background: #D44638; color: white !important; }
+        .contact-btn a.email-btn:hover { background: #b03024; }
+
+        footer {
+            text-align: center; padding: 15px; background: #004aad; color: #fff; position: fixed; bottom: 0; width: 100%; box-sizing: border-box; }
+
+        /* --- MEDIA QUERIES --- */
+        @media (max-width: 768px) {
+            main { width: 95%; padding: 15px; }
+            main h2 { font-size: 1.4em; }
+            .services { flex-direction: column; align-items: center; }
+            .service { width: 90%; margin-bottom: 15px; }
+            .contact-btn { flex-direction: column; align-items: center; }
+            .contact-btn a { width: 80%; margin-bottom: 10px; box-sizing: border-box; }
+            nav ul { text-align: center; }
+            nav ul li { margin: 0 8px; display: inline-block; margin-bottom: 5px; }
+            h1 { font-size: 1.8em; }
+            h3 { font-size: 1.1em; }
+        }
+         @media (max-width: 480px) {
+             nav ul li { margin: 0 5px; }
+             .btn { padding: 10px 15px; }
+            h1 { font-size: 1.5em; }
+            h2 { font-size: 1.2em; }
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a ByteClean</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Consejos para tu PC y Seguridad</h1>
+        <article>
+            <h2>Trucos Sencillos para Optimizar tu PC</h2>
+            <p>
+                Con el tiempo, es normal que los ordenadores se vuelvan más lentos. Archivos innecesarios, programas que se inician solos y la falta de mantenimiento pueden afectar significativamente el rendimiento. Afortunadamente, hay varias acciones sencillas que puedes realizar para devolverle agilidad a tu equipo sin necesidad de ser un experto.
+            </p>
+            <p>
+                Aquí tienes algunos pasos básicos pero efectivos:
+                <ul>
+                    <li><strong>Liberador de espacio en disco:</strong> Windows incluye una herramienta útil para eliminar archivos temporales, miniaturas y otros elementos que ocupan espacio. Búscala escribiendo "Liberador de espacio en disco" en el menú de inicio o ejecuta `cleanmgr` (Win+R y escribe `cleanmgr`). Selecciona la unidad (normalmente C:) y marca las casillas de los archivos que quieres eliminar.</li>
+                    <li><strong>Gestionar programas de inicio:</strong> Muchos programas se configuran para iniciarse automáticamente con Windows, consumiendo recursos desde el arranque. Pulsa `Ctrl+Shift+Esc` para abrir el Administrador de Tareas, ve a la pestaña "Inicio" y deshabilita aquellos programas que no necesites que se inicien automáticamente (¡cuidado con no deshabilitar elementos esenciales del sistema o tu antivirus!).</li>
+                    <li><strong>Mantén todo actualizado:</strong> Asegúrate de que tanto Windows como tus programas (navegador, antivirus, etc.) estén actualizados a sus últimas versiones. Las actualizaciones no solo añaden funciones, sino que también corrigen errores y agujeros de seguridad que pueden afectar al rendimiento.</li>
+                </ul>
+            </p>
+        </article>
+
+        <article>
+            <h2>Cómo Detectar y Eliminar Virus y Malware</h2>
+            <p>
+                El malware (software malicioso) es una amenaza constante que puede manifestarse de muchas formas: virus que dañan archivos, spyware que roba información, ransomware que secuestra tus datos, adware que te bombardea con publicidad, etc. Detectarlo a tiempo es crucial para proteger tu información y el buen funcionamiento de tu PC. Algunos síntomas comunes incluyen lentitud extrema, ventanas emergentes inesperadas, redirecciones del navegador, programas que se abren solos o fallos constantes.
+            </p>
+            <p>
+                Si sospechas que tu PC está infectado, sigue estos pasos:
+                <ol>
+                    <li><strong>Instala y actualiza un buen antivirus:</strong> Si no tienes uno, instala un programa antivirus de confianza (hay buenas opciones gratuitas como Avast Free, AVG Free o el propio Microsoft Defender incluido en Windows). Asegúrate de que esté actualizado y realiza un análisis completo del sistema.</li>
+                    <li><strong>Análisis en Modo Seguro:</strong> A veces, el malware impide que el antivirus funcione correctamente en el modo normal de Windows. Reinicia tu PC en "Modo Seguro con funciones de red" (la forma de acceder varía según la versión de Windows, a menudo implica pulsar F8 repetidamente durante el arranque o usar Shift + Reiniciar desde el menú de inicio). Una vez en Modo Seguro, ejecuta de nuevo el análisis completo de tu antivirus.</li>
+                    <li><strong>Elimina las amenazas encontradas:</strong> Sigue las instrucciones de tu antivirus para eliminar o poner en cuarentena los archivos infectados que detecte.</li>
+                    <li><strong>Ten cuidado con lo que descargas e instalas:</strong> La mejor defensa es la prevención. Evita descargar archivos de fuentes no fiables, no abras adjuntos de correos sospechosos y lee atentamente durante la instalación de programas para no instalar software adicional no deseado (PUPs).</li>
+                </ol>
+            </p>
+        </article>
+
+        <article>
+            <h2>Consejos Básicos de Ciberseguridad para Todos</h2>
+            <p>
+                La ciberseguridad no es solo cosa de grandes empresas; proteger tu información personal en el mundo digital es esencial para evitar robos de identidad, fraudes o pérdida de datos importantes. Adoptar hábitos seguros en tu día a día marca una gran diferencia y no requiere conocimientos técnicos avanzados. Se trata de ser consciente de los riesgos y tomar precauciones básicas.
+            </p>
+            <p>
+                Implementa estos consejos fundamentales para mejorar tu seguridad:
+                <ul>
+                    <li><strong>Contraseñas seguras y únicas:</strong> No uses la misma contraseña para todo. Crea contraseñas largas (más de 12 caracteres) que mezclen mayúsculas, minúsculas, números y símbolos. Considera usar un gestor de contraseñas (como Bitwarden, LastPass, 1Password) para generar y almacenar claves complejas de forma segura.</li>
+                    <li><strong>Cuidado con el Phishing:</strong> Desconfía de correos electrónicos, mensajes o llamadas inesperadas que te pidan información personal, credenciales de acceso o te inciten a hacer clic en enlaces o descargar archivos. Verifica siempre la identidad del remitente por otro medio si tienes dudas. Fíjate bien en la dirección del remitente y en la URL de los enlaces (pasa el ratón por encima sin hacer clic).</li>
+                    <li><strong>Activa la Autenticación de Dos Factores (2FA/MFA):</strong> Siempre que esté disponible (en tu email, redes sociales, banco online...), activa la verificación en dos pasos. Esto añade una capa extra de seguridad, ya que además de tu contraseña, necesitarás un código enviado a tu móvil o generado por una app para poder acceder.</li>
+                    <li><strong>Precaución con Redes Wi-Fi Públicas:</strong> Evita realizar operaciones sensibles (como banca online o compras) cuando estés conectado a redes Wi-Fi públicas (aeropuertos, cafeterías...). Si necesitas usarlas, considera utilizar una VPN (Red Privada Virtual) para cifrar tu conexión.</li>
+                    <li><strong>Actualizaciones, actualizaciones, actualizaciones:</strong> Sí, otra vez. Mantener tu sistema operativo, navegador y aplicaciones al día es una de las formas más efectivas de protegerte contra vulnerabilidades conocidas que los ciberdelincuentes aprovechan.</li>
+                </ul>
+            </p>
+        </article>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ByteClean | Servicio Técnico de Ordenadores</p>
+    </footer>
+</body>
+</html>
