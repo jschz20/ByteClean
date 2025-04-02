@@ -1,85 +1,151 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ByteClean - Optimización y Mantenimiento de PC</title>
-    <meta name="description" content="ByteClean ofrece servicios de optimización, limpieza y mantenimiento de PC. Acelera tu ordenador y elimina virus fácilmente.">
-    <meta name="keywords" content="optimización de PC, limpieza de virus, mantenimiento de ordenadores, recuperación de datos, instalación de sistemas operativos">
+    <meta name="description" content="Trucos y consejos para optimizar tu PC, eliminar virus y mejorar la seguridad informática.">
+    <meta name="keywords" content="optimización PC, eliminar virus, ciberseguridad, acelerar ordenador, protección informática">
     <meta name="author" content="ByteClean">
-    <meta name="robots" content="index, follow">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <title>ByteClean - Optimización y Seguridad</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Manteniendo el estilo original -->
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            color: #333;
+            padding-bottom: 50px; /* Espacio adicional para que el footer no tape el contenido */
+        }
+        header {
+            background: #004aad;
+            color: #fff;
+            padding: 20px;
             text-align: center;
         }
-        .container {
-            max-width: 800px;
-            margin: 50px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1, h2 {
-            color: #333;
-        }
-        ul {
+        nav ul {
             list-style: none;
             padding: 0;
-            text-align: left;
-            display: inline-block;
         }
-        ul li {
-            padding: 10px 0;
-            border-bottom: 1px solid #ddd;
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
         }
-        .contacto a {
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            width: 80%;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #004aad;
+            text-align: center; /* Centrado del título */
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .service {
+            background: #e8f0fe;
+            padding: 15px;
+            border-radius: 5px;
+            width: 30%;
+            text-align: center;
+        }
+        .btn {
             display: inline-block;
-            margin: 10px 20px;
+            background: #004aad;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background: #003580;
+        }
+        .contact-btn {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .contact-btn a {
+            margin: 0 10px;
+            background: #25D366; /* WhatsApp color */
             padding: 10px 20px;
+            border-radius: 5px;
             color: white;
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
+            font-weight: bold;
         }
-        .whatsapp {
-            background: #25D366;
+        .contact-btn a.email-btn {
+            background: #D44638; /* Email color */
         }
-        .email {
-            background: #007BFF;
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #004aad;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>ByteClean, tu PC como nuevo, siempre!</h1>
-        <h2>🛠️ Nuestros servicios</h2>
-        <ul>
-            <li>⚡ Optimización de ordenadores y laptops</li>
-            <li>💾 Recuperación de datos en discos duros HDD y SSD</li>
-            <li>🦠 Eliminación de malware y virus</li>
-            <li>💻 Instalación de sistemas operativos: Windows 10, 11, Linux, Chrome OS</li>
-            <li>🚀 Configuración para obtener el mejor rendimiento</li>
-            <li>🧹 Limpieza de sistemas y optimización de velocidad</li>
-        </ul>
-        <p><strong>Servicio profesional y garantizado.</strong></p>
-        <h2>Contacto</h2>
-        <div class="contacto">
-            <a href="https://wa.me/34747439650" class="whatsapp">📱 WhatsApp</a>
-            <a href="mailto:bytecleaninfo@gmail.com" class="email">📧 Email</a>
-        </div>
-    </div>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXX-Y"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-XXXXX-Y');
-    </script>
+    <header>
+        <h1>Bienvenido a ByteClean</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Servicios -->
+        <section id="servicios">
+            <h2>Servicios que ofrecemos</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Optimización de PC</h3>
+                    <p>Mejora el rendimiento de tu PC con nuestras técnicas especializadas.</p>
+                </div>
+                <div class="service">
+                    <h3>Eliminación de Virus</h3>
+                    <p>Protege tu PC y elimina cualquier tipo de amenaza maliciosa.</p>
+                </div>
+                <div class="service">
+                    <h3>Ciberseguridad</h3>
+                    <p>Asegura tu información personal con nuestras soluciones en ciberseguridad.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Botones de contacto -->
+        <section class="contact-btn">
+            <a href="https://wa.me/34747439650" target="_blank" class="btn">Contacto vía WhatsApp</a>
+            <a href="mailto:bytecleaninfo@gmail.com" class="btn email-btn">Contacto vía Email</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ByteClean | Servicio Técnico de Ordenadores</p>
+    </footer>
 </body>
 </html>
