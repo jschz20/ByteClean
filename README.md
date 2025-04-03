@@ -27,10 +27,6 @@ ByteClean es una página web que ofrece servicios técnicos relacionados con la 
 
 Si deseas contribuir a mejorar este proyecto, siéntete libre de hacer un fork y enviar tus pull requests. Apreciamos cualquier sugerencia que puedas tener.
 
-## Licencia
-
-Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
-
 ## Contacto
 
 Si tienes alguna pregunta o necesitas soporte, no dudes en contactarnos:
