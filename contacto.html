@@ -15,7 +15,7 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
-            padding-bottom: 70px; /* Espacio adicional para que el footer no tape el contenido */
+            padding-bottom: 70px;
         }
         header {
             background: #004aad;
@@ -36,6 +36,13 @@
             color: #fff;
             text-decoration: none;
             font-weight: bold;
+            padding: 10px 15px; /* Añadimos padding para el tamaño del botón */
+            border-radius: 5px; /* Añadimos un borde redondeado */
+            background-color: #003580; /* Añadimos un fondo sutil */
+            transition: background-color 0.3s ease; /* Añadimos una transición suave */
+        }
+        nav ul li a:hover {
+            background-color: #002555; /* Oscurecemos el fondo al pasar el ratón */
         }
         main {
             width: 85%;
@@ -44,65 +51,61 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            line-height: 1.6; /* Mejora legibilidad */
+            line-height: 1.6;
         }
-         /* Estilo específico para la info de contacto */
-         .contact-info {
-             text-align: center; /* Centramos la info */
-             font-size: 1.1em; /* Hacemos el texto un poco más grande */
-             margin-top: 30px; /* Espacio arriba */
-             margin-bottom: 30px; /* Espacio abajo */
-         }
-         .contact-info p {
-             margin-bottom: 15px; /* Espacio entre líneas de contacto */
-         }
-         .contact-info a {
-             color: #004aad; /* Usamos el color principal para los enlaces */
-             text-decoration: none;
-             font-weight: bold;
-         }
-         .contact-info a:hover {
-             text-decoration: underline;
-         }
-
-        section { /* Estilo general por si se usa section */
+        .contact-info {
+            text-align: center;
+            font-size: 1.1em;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .contact-info p {
+            margin-bottom: 15px;
+        }
+        .contact-info a {
+            color: #004aad;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        section {
             margin-bottom: 20px;
         }
-        h1 { /* Aseguramos color y centrado si no lo heredan */
+        h1 {
             color: #004aad;
             text-align: center;
-            margin-bottom: 20px; /* Espacio debajo de títulos */
+            margin-bottom: 20px;
         }
-         h2 { /* Estilo base por si se usan h2 */
+        h2 {
             color: #004aad;
             text-align: left;
             margin-bottom: 15px;
-         }
-
-        .services { /* Reutilizamos por si acaso */
-             display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 20px; gap: 15px; }
-        .service { /* Reutilizamos por si acaso */
-             background: #e8f0fe; padding: 15px; border-radius: 5px; width: 30%; text-align: center; box-sizing: border-box; flex-grow: 1; min-width: 200px; }
+        }
+        .services {
+            display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 20px; gap: 15px;
+        }
+        .service {
+            background: #e8f0fe; padding: 15px; border-radius: 5px; width: 30%; text-align: center; box-sizing: border-box; flex-grow: 1; min-width: 200px;
+        }
         .btn {
-            display: inline-block; color: white !important; padding: 12px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 10px; text-align: center; border: none; cursor: pointer; }
+            display: inline-block; color: white !important; padding: 12px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 10px; text-align: center; border: none; cursor: pointer;
+        }
         .contact-btn {
-            margin-top: 20px; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; }
+            margin-top: 20px; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px;
+        }
         .contact-btn a { margin: 0; }
-
-        /* --- ESTILOS BOTONES CONTACTO (Aunque no estén en esta página, mantenemos por consistencia) --- */
         .contact-btn a.whatsapp-btn { background-color: #25D366; color: white !important; }
         .contact-btn a.whatsapp-btn:hover { background-color: #1DA851; }
         .contact-btn a.email-btn { background: #D44638; color: white !important; }
         .contact-btn a.email-btn:hover { background: #b03024; }
-
         footer {
-            text-align: center; padding: 15px; background: #004aad; color: #fff; position: fixed; bottom: 0; width: 100%; box-sizing: border-box; }
-
-        /* --- MEDIA QUERIES --- */
+            text-align: center; padding: 15px; background: #004aad; color: #fff; position: fixed; bottom: 0; width: 100%; box-sizing: border-box;
+        }
         @media (max-width: 768px) {
             main { width: 95%; padding: 15px; }
-             .contact-info { font-size: 1em; } /* Ajustar tamaño de fuente en móvil */
-            /* No necesitamos adaptar .services ni .contact-btn aquí, pero mantenemos las reglas generales */
+            .contact-info { font-size: 1em; }
             .services { flex-direction: column; align-items: center; }
             .service { width: 90%; margin-bottom: 15px; }
             .contact-btn { flex-direction: column; align-items: center; }
@@ -111,11 +114,11 @@
             nav ul li { margin: 0 8px; display: inline-block; margin-bottom: 5px; }
             h1 { font-size: 1.8em; }
         }
-         @media (max-width: 480px) {
-             nav ul li { margin: 0 5px; }
-             .btn { padding: 10px 15px; }
+        @media (max-width: 480px) {
+            nav ul li { margin: 0 5px; }
+            .btn { padding: 10px 15px; }
             h1 { font-size: 1.5em; }
-         }
+        }
     </style>
 </head>
 <body>
@@ -132,7 +135,6 @@
 
     <main>
         <h1>Información de Contacto</h1>
-
         <section class="contact-info">
             <p>
                 Si prefieres contactarnos directamente por teléfono o correo electrónico, o simplemente necesitas tener nuestros datos a mano, aquí los encontrarás:
@@ -149,7 +151,6 @@
                 No dudes en llamarnos o escribirnos para cualquier consulta sobre nuestros servicios de optimización, eliminación de virus o ciberseguridad. ¡Estaremos encantados de ayudarte!
             </p>
         </section>
-
     </main>
 
     <footer>
