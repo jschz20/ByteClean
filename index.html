@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -36,6 +37,13 @@
             color: #fff;
             text-decoration: none;
             font-weight: bold;
+            padding: 10px 15px; /* Añadimos padding para el tamaño del botón */
+            border-radius: 5px; /* Añadimos un borde redondeado */
+            background-color: #003580; /* Añadimos un fondo sutil */
+            transition: background-color 0.3s ease; /* Añadimos una transición suave */
+        }
+        nav ul li a:hover {
+            background-color: #002555; /* Oscurecemos el fondo al pasar el ratón */
         }
         main {
             width: 85%;
@@ -71,7 +79,6 @@
         }
         .btn {
             display: inline-block;
-            /* background: #004aad; -> Eliminamos el fondo azul por defecto aquí */
             color: white !important;
             padding: 12px 20px;
             border-radius: 5px;
@@ -82,11 +89,6 @@
             border: none;
             cursor: pointer;
         }
-        /* Quitamos el hover azul genérico para .btn para definirlo por botón */
-        /* .btn:hover {
-            background: #003580;
-        } */
-
         .contact-btn {
             margin-top: 20px;
             display: flex;
@@ -102,18 +104,18 @@
         .contact-btn a.whatsapp-btn {
              background-color: #25D366; /* Verde WhatsApp */
              color: white !important;
-         }
-         .contact-btn a.whatsapp-btn:hover {
+        }
+        .contact-btn a.whatsapp-btn:hover {
              background-color: #1DA851; /* Verde WhatsApp oscuro */
-         }
+        }
 
         .contact-btn a.email-btn {
             background: #D44638; /* Email color */
             color: white !important;
         }
-         .contact-btn a.email-btn:hover {
+        .contact-btn a.email-btn:hover {
             background: #b03024; /* Email color hover */
-         }
+        }
 
 
         footer {
