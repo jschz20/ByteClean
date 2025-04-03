@@ -15,7 +15,7 @@
             padding: 0;
             background-color: #f4f4f4;
             color: #333;
-            padding-bottom: 70px; /* Espacio adicional para que el footer no tape el contenido */
+            padding-bottom: 70px;
         }
         header {
             background: #004aad;
@@ -36,6 +36,13 @@
             color: #fff;
             text-decoration: none;
             font-weight: bold;
+            padding: 10px 15px; /* Añadimos padding para el tamaño del botón */
+            border-radius: 5px; /* Añadimos un borde redondeado */
+            background-color: #003580; /* Añadimos un fondo sutil */
+            transition: background-color 0.3s ease; /* Añadimos una transición suave */
+        }
+        nav ul li a:hover {
+            background-color: #002555; /* Oscurecemos el fondo al pasar el ratón */
         }
         main {
             width: 85%;
@@ -44,65 +51,61 @@
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-            line-height: 1.6; /* Mejora legibilidad */
+            line-height: 1.6;
         }
-         main article {
-            margin-bottom: 30px; /* Espacio entre artículos */
-            padding-bottom: 20px; /* Espacio antes de la línea */
-            border-bottom: 1px solid #eee; /* Separador visual */
-         }
-         main article:last-child {
-            border-bottom: none; /* No poner línea en el último */
+        main article {
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        main article:last-child {
+            border-bottom: none;
             margin-bottom: 0;
-         }
-         main h2 {
-             margin-top: 0; /* Evitar doble margen */
-             margin-bottom: 15px;
-         }
-         main ul {
-             margin-left: 20px;
-             margin-bottom: 15px;
-         }
-         main li {
-             margin-bottom: 5px;
-         }
-
-        section { /* Estilo general por si se usa section */
+        }
+        main h2 {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        main ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        main li {
+            margin-bottom: 5px;
+        }
+        section {
             margin-bottom: 20px;
         }
-        /* Título Principal H1 Centrado */
         h1 {
             color: #004aad;
-            text-align: center; /* Asegura el centrado */
-            margin-bottom: 30px; /* Aumentamos un poco el margen inferior para H1 */
+            text-align: center;
+            margin-bottom: 30px;
         }
-        /* Títulos de Artículos H2 a la Izquierda */
-         h2 {
+        h2 {
             color: #004aad;
-            text-align: left; /* Alineados a la izquierda */
-             margin-bottom: 15px;
-         }
-
-        .services { /* Reutilizamos por si acaso */
-            display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 20px; gap: 15px; }
-        .service { /* Reutilizamos por si acaso */
-            background: #e8f0fe; padding: 15px; border-radius: 5px; width: 30%; text-align: center; box-sizing: border-box; flex-grow: 1; min-width: 200px; }
+            text-align: left;
+            margin-bottom: 15px;
+        }
+        .services {
+            display: flex; justify-content: space-around; flex-wrap: wrap; margin-top: 20px; gap: 15px;
+        }
+        .service {
+            background: #e8f0fe; padding: 15px; border-radius: 5px; width: 30%; text-align: center; box-sizing: border-box; flex-grow: 1; min-width: 200px;
+        }
         .btn {
-            display: inline-block; color: white !important; padding: 12px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 10px; text-align: center; border: none; cursor: pointer; }
+            display: inline-block; color: white !important; padding: 12px 20px; border-radius: 5px; text-decoration: none; font-weight: bold; margin-top: 10px; text-align: center; border: none; cursor: pointer;
+        }
         .contact-btn {
-            margin-top: 20px; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px; }
+            margin-top: 20px; display: flex; justify-content: center; flex-wrap: wrap; gap: 15px;
+        }
         .contact-btn a { margin: 0; }
-
-        /* --- ESTILOS BOTONES CONTACTO --- */
         .contact-btn a.whatsapp-btn { background-color: #25D366; color: white !important; }
         .contact-btn a.whatsapp-btn:hover { background-color: #1DA851; }
         .contact-btn a.email-btn { background: #D44638; color: white !important; }
         .contact-btn a.email-btn:hover { background: #b03024; }
-
         footer {
-            text-align: center; padding: 15px; background: #004aad; color: #fff; position: fixed; bottom: 0; width: 100%; box-sizing: border-box; }
-
-        /* --- MEDIA QUERIES --- */
+            text-align: center; padding: 15px; background: #004aad; color: #fff; position: fixed; bottom: 0; width: 100%; box-sizing: border-box;
+        }
         @media (max-width: 768px) {
             main { width: 95%; padding: 15px; }
             main h2 { font-size: 1.4em; }
@@ -115,12 +118,12 @@
             h1 { font-size: 1.8em; }
             h3 { font-size: 1.1em; }
         }
-         @media (max-width: 480px) {
-             nav ul li { margin: 0 5px; }
-             .btn { padding: 10px 15px; }
+        @media (max-width: 480px) {
+            nav ul li { margin: 0 5px; }
+            .btn { padding: 10px 15px; }
             h1 { font-size: 1.5em; }
             h2 { font-size: 1.2em; }
-         }
+        }
     </style>
 </head>
 <body>
@@ -184,7 +187,6 @@
                 </ul>
             </p>
         </article>
-
     </main>
 
     <footer>
